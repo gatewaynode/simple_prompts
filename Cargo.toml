@@ -1,0 +1,15 @@
+[package]
+name = "simple_prompts"
+version = "0.1.0"
+authors = ["gatewaynode <44749714+gatewaynode@users.noreply.github.com>"]
+edition = "2018"
+description = "A simple wrapper for Rustyline which provides 2 easy to use CLI prompts."
+readme = "README.md"
+license = "MIT"
+license-file = "LICENSE.txt"
+homepage = "https://gatewaynode.com"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustyline = "6.1"
