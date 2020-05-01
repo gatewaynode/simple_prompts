@@ -8,7 +8,7 @@ If you need more flexibility or features, just drop back to [Rustyline](https://
 
 Cargo.toml
 ```
-simple_prompts = "0.1"
+simple_prompts = "0.1.1"
 ```
 
 main.rs
