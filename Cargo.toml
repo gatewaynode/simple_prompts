@@ -7,6 +7,7 @@ description = "A simple wrapper for Rustyline which provides 2 easy to use CLI p
 readme = "README.md"
 license = "MIT"
 license-file = "LICENSE.txt"
+repository = "https://github.com/gatewaynode/simple_prompts"
 homepage = "https://gatewaynode.com"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
