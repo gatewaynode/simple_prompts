@@ -5,3 +5,13 @@ This is a very basic wrapper around the [Rustyline crate](https://github.com/kka
 That's it.
 
 If you need more flexibility or features, just drop back to [Rustyline](https://github.com/kkawakam/rustyline).  This library was just designed to save ~50 lines of code and make my source code cleaner on other projects.
+
+Cargo.toml
+```
+simple_prompts = "0.1"
+```
+
+main.rs
+```
+use simple_prompts::{prompt, edit_prompt};
+```

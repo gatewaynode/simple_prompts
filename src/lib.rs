@@ -2,7 +2,7 @@ use rustyline::error::ReadlineError;
 use rustyline::Editor;
 use std::process::exit;
 
-fn prompt(prompt: &str) -> String {
+pub fn prompt(prompt: &str) -> String {
     let mut editor = Editor::<()>::new();
     let readline = editor.readline(&prompt);
     match readline {
@@ -22,7 +22,7 @@ fn prompt(prompt: &str) -> String {
     }
 }
 
-fn edit_prompt(prompt: &str, value: &str) -> String {
+pub fn edit_prompt(prompt: &str, value: &str) -> String {
     let mut editor = Editor::<()>::new();
     let readline = editor.readline_with_initial(prompt, (value, ""));
     match readline {
