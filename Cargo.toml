@@ -1,6 +1,6 @@
 [package]
 name = "simple_prompts"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["gatewaynode <44749714+gatewaynode@users.noreply.github.com>"]
 edition = "2018"
 description = "A simple wrapper for Rustyline which provides 2 easy to use CLI prompts."
