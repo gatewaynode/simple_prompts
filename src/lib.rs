@@ -1,6 +1,8 @@
 use rustyline::error::ReadlineError;
 use rustyline::Editor;
 use std::process::exit;
+extern crate v_htmlescape;
+use v_htmlescape::escape;
 
 
 /// Creates a CLI prompt from a &str for input and returns a String.
@@ -14,9 +16,9 @@ use std::process::exit;
 ///   println!("{}", value)
 /// }
 /// ```
-pub fn prompt(prompt: &str) -> String {
+pub fn prompt(given_prompt: &str) -> String {
     let mut editor = Editor::<()>::new();
-    let readline = editor.readline(&prompt);
+    let readline = editor.readline(&given_prompt);
     match readline {
         Ok(line) => {
             line
@@ -65,4 +67,21 @@ pub fn edit_prompt(prompt: &str, value: &str) -> String {
             exit(1)
         }
     }
+}
+
+
+/// Filters input with HTML entity replacement
+///
+/// Example
+/// ```
+/// use simple_prompts::{filter_prompt};
+///
+/// pub fn do_this() {
+///   let value = filter_prompt("Enter a value: ");
+///   println!("{}", value)
+/// }
+/// ```
+pub fn filter_prompt(given_prompt: &str) -> String {
+    let filtered_input: String = prompt(given_prompt);
+    escape(&filtered_input).to_string()
 }
