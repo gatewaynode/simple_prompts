@@ -14,12 +14,6 @@ If you need more flexibility or features, just drop back to [Rustyline](https://
 Example
 -------
 
-*Cargo.toml*
-```
-[dependencies]
-simple_prompts = "0.1.2"
-```
-
 *main.rs*
 ```
 use simple_prompts::{prompt, edit_prompt, filter_prompt};
